@@ -17,6 +17,17 @@ public class DriverToDrawerAdapter extends DrawPanelController implements Job2dD
         drawPanelController = DrawerFeature.getDrawerController();
 	}
 
+    public int getStartX(){
+        return startX;
+    }
+    public int getStartY(){
+        return startY;
+    }
+
+    public DrawPanelController getDrawPanelController(){
+        return drawPanelController;
+    }
+
 	@Override
 	public void setPosition(int x, int y) {
 		this.startX = x;
